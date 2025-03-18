@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'national-park-regular';
+    src: url(assets/fonts/TestNational2Condensed-Regular.otf);
+}
+
+@font-face {
+    font-family: 'national-park-meduim';
+    src: url(assets/fonts/TestNational2Condensed-Medium.otf);
+}
+
+@font-face {
+    font-family: 'national-park-bold';
+    src: url(assets/fonts/TestNational2Condensed-Bold.otf);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    margin: 0 50px;
+}
+
+.slider div {
+    padding: 40px 40px 0 40px;
+    border-radius: 10px;
+}
+
+.slick-slide {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.slider div p {
+    text-align: center !important;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'national-park-regular';
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.navbar-section {
+    font-family: 'national-park-regular';
+    padding: 0 50px 40px 50px;
+    margin-top: -20px;
+}
+
+.navbar-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-section nav ul.links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar-section nav ul.links li a {
+    font-size: 30px;
+    font-weight: 400;
+    transition: 0.5s;
+    color: black !important;
+}
+
+.navbar-section nav ul.links li a:hover {
+    color: #FF0000 !important;
+}
+
+.change-location-btn {
+    font-family: "Inter", sans-serif;
+    background-color: #FF0000;
+    color: white;
+    font-weight: 800;
+    border: none;
+    width: 220px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* hero section */
+
+.hero-section {
+    font-family: "Caprasimo", serif;
+    background-image: url(assets/images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    padding: 150px 100px 100px 39px;
+}
+
+.hero-inner-section {
+    width: 600px;
+    text-align: center;
+}
+
+.hero-inner-section :nth-child(2) {
+    font-size: 130px;
+    color: #FCED23;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-inner-section :nth-child(3) {
+    font-size: 50px;
+    color: white;
+    line-height: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-bar-container {
+    padding: 20px 80px 0 80px;
+}
+
+.search-bar-container input {
+    border: 2px solid #FF0000;
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+}
+
+/* popular-items-container */
+
+.popular-items-container {
+    padding: 50px 80px 50px 80px;
+}
+
+.popular-items-container :nth-child(1) {
+    font-family: 'national-park-bold';
+    font-size: 40px;
+}
+
+.popular-items-container :nth-child(2) {
+    font-family: 'national-park-regular';
+    font-size: 30px;
+}
+
+.popular-item {
+    padding: 30px;
+    transition: 0.5s;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.popular-item:hover {
+    border: 2px solid #FF0000;
+}
+
+/* Our menu section */
+
+.our-menu-title {
+    text-align: center;
+    margin: 60px 0 120px 0;
+    font-family: 'national-park-bold';
+    font-size: 40px;
+}
+
+.add-btn {
+    font-family: 'national-park-bold';
+    background-color: #FF0000;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+/* location section */
+
+.location-section-container {
+    margin: 72px 0 95px 0;
+    background-color: black;
+    height: 567px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 26px;
+}
+
+.location-section-container :nth-child(2) {
+    font-size: 60px;
+    color: #FCED23;
+    font-family: "Caprasimo", serif;
+    margin-top: 30px;
+}
+
+.location-section-container :nth-child(3) {
+    font-size: 40px;
+    color: white;
+    width: 1337px;
+    font-family: 'national-park-bold';
+}
+
+/* about section */
+
+.about-section-container {
+    padding: 0px 80px;
+}
+
+/* footer section */
+
+.footer-section {
+    margin: 30px 0 0 0;
+}
+
+.footer-1 {
+    margin: 30px 0 0 0;
+    background-color: black;
+    height: 594px;
+    width: 100%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-1 ul li a,
+.footer-1 ul li {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.footer-2 {
+    background-color: #FF0000;
+    height: 80px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* font-family: "Just Another Hand", cursive; */
+/* font-family: "Jura", sans-serif; */
